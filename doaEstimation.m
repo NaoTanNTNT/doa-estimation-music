@@ -55,7 +55,12 @@ end
 [resSorted, orgInd] = sort(res, 'descend');
 DOAs = orgInd(1:N, 1);
 % STEP d: Finding the noise subspace and estimating the DOAs %%%%%%%%%%%%%
-
+ figure;
+    plot(res);
+    xlabel('Angle (deg)');
+    ylabel('1/Norm^2');
+    title ('Estimation of DOAs')
+    grid;
 %%
 clc;
 clear;
